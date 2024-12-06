@@ -24,5 +24,7 @@ public class Database_Testing {
     public static void main(String[] args) {
         Database_Testing dt = new Database_Testing();
         dt.get_Connection();
+        Data_Read dr=new Data_Read();
+        dr.read_Data(dt.conn);
     }
 }
